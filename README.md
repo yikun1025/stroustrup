@@ -1,1 +1,2 @@
 # stroustrup
+c++ exercise
