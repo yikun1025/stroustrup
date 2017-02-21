@@ -27,7 +27,7 @@ void Name_pairs::read_names()
 {
     cout << "Enter names, 'NoName' to finish: ";
     string s;
-    while (cin>>s && s!="NoName") {
+    while (cin>>s && s!="q") {
         for (int i = 0; i<name.size(); ++i)
             if (name[i]==s) throw("Name exists already");
         name.push_back(s);
