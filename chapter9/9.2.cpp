@@ -25,7 +25,7 @@ private:
 // reads series of names
 void Name_pairs::read_names()
 {
-    cout << "Enter names, 'NoName' to finish: ";
+    cout << "Enter names, 'q' to finish: ";
     string s;
     while (cin>>s && s!="q") {
         for (int i = 0; i<name.size(); ++i)
