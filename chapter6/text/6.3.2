@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+int main() {
+    char choice;
+    char op;
+    int lval;
+    int rval;
+    cin >> lval;
+
+    while(cin >> op)
+    {
+        if (op != ';') cin >> rval;
+
+        cin >> op >> rval;
+        if (op == '+')
+            lval += rval;
+        else if (op == '-')
+            lval -= rval;
+        else if (op == '*')
+            lval *= rval;
+        else if (op == '/' && lval != 0)
+            lval /= rval;
+        else
+            cout << "error" << endl;
+
+        cout << lval << endl;
+
+    }
+
+}
