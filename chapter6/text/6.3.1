@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+int main() {
+    cout << "please enter the operator: " << endl;
+    char op;
+    int rval = 0;
+    int lval;
+    cin >> lval >> op >> rval;
+    int res;
+    
+    if (op == '+')
+        res = lval + rval;
+    else if (op == '-')
+        res = lval - rval;
+    else if (op == '*')
+        res = lval * rval;
+    else if (op == '/' && lval != 0)
+        res = lval / rval;
+    else
+        cout << "error" << endl;
+
+    cout << res << endl;
+}
